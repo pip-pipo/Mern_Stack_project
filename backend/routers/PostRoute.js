@@ -1,5 +1,6 @@
 import express from 'express';
 // import post from '../models/Post.js'
+
 import {postgetroute,registerPage} from '../controllers/route.js'
 
 
