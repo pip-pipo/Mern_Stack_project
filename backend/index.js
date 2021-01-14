@@ -11,7 +11,9 @@ dotenv.config()
 app.use('/posts',Router)
 const PORT = process.env.PORT || 5000;
 
+
 const MONGOOSE_URI = process.env.MONGOOSE_URI
+
 
 mongoose.connect(MONGOOSE_URI,{
     useCreateIndex:true,
