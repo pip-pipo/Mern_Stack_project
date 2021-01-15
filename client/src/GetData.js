@@ -6,14 +6,13 @@ const GetData = () => {
         getDatas()
     }, [])
 
-
     const [users,setUsers] = useState([])
 
     const getDatas = async () => {
         const result = await axios.get("http://localhost:8000/posts/PostMsgRouteGet");
         setUsers(result.data)
     }
-   
+    console.log(users);
     return (
         <div className="my-2">
 
