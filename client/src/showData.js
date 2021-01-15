@@ -30,8 +30,8 @@ const ShowData = () => {
             sucess.appendChild(success)
             setTimeout(()=>{
             success.innerHTML="";
-            success.classList.remove("btn","btn-success")
-                
+            success.classList.remove("btn","btn-success","text-center")
+                window.location.reload()
             },2000)
 
         } catch (error) {
@@ -40,7 +40,7 @@ const ShowData = () => {
     }
     return (
         <div className="mt-2">
-            <h4 className="bg-info py-3 my-3 text-light display-2">Add User</h4>
+            <h4 className="bg-info py-3 my-3 text-light display-2 text-center">Add User</h4>
             <div  className="succes"></div>
             <form className="col-sm-5 m-auto" action="" onSubmit={e => OnsubmitEvent(e)}>
                 <div className="form-group mt-5">
